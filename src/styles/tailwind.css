@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: Switzer, system-ui, sans-serif;
+
+  --radius-4xl: 2rem;
+}
+
+@keyframes move-x {
+  0% {
+    transform: translateX(var(--move-x-from));
+  }
+  100% {
+    transform: translateX(var(--move-x-to));
+  }
+}
+
+/* Distinct Radiant composition remains intentionally separate. */
+
+@media (min-width: 1024px) {
+  [data-template] main > section:not(:first-child) > div > div:first-child { text-align: center; margin-inline: auto; }
+  [data-template] main > section:not(:first-child) > div > div:first-child h2 { margin-inline: auto; }
+  [data-template] main > section:first-child > div > div:first-child { text-align: center; align-items: center; }
+}
+/* Keep the editorial layouts readable even when a demo uses a dark band. */
+[data-template] main > section[class*="text-white"] h1,
+[data-template] main > section[class*="text-white"] h2,
+[data-template] main > section[class*="text-white"] h3,
+[data-template] main > section[class*="text-white"] p,
+[data-template] main > section[class*="text-white"] a,
+[data-template] main > section[class*="text-white"] summary { color: #fff; }
+[data-template] main > section[class*="text-white"] p { color: rgb(226 232 240); }
+[data-template] main > section[class*="text-white"] a.rounded-full { color: #fff; }
