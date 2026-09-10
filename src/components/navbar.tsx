@@ -43,7 +43,7 @@ function DesktopNav() {
         <details className="group">
           <summary className="cursor-pointer list-none">Zone <span className="text-xs">v</span></summary>
           <div className="absolute right-0 top-full z-20 mt-2 grid w-[24rem] grid-cols-2 gap-x-5 gap-y-2 rounded-2xl border border-black/10 bg-white p-5 text-sm shadow-xl">
-            {zones.map((zone) => <Link key={zone} href={'/zone/' + zone.toLowerCase().replaceAll(' ', '-')} className="text-sm font-medium text-gray-800">Carroattrezzi a {zone}</Link>)}
+            {zones.map((zone) => <Link key={zone.slug} href={`/zone/${zone.slug}`} className="text-sm font-medium text-gray-800">{zone.title}</Link>)}
           </div>
         </details>
       </PlusGridItem>
@@ -75,7 +75,7 @@ function MobileNav() {
         <details>
           <summary className="cursor-pointer list-none text-base font-medium text-gray-950">Zone servite</summary>
           <div className="mt-3 grid gap-3 border-l border-black/10 pl-4">
-            {zones.map((zone) => <Link key={zone} href={'/zone/' + zone.toLowerCase().replaceAll(' ', '-')} className="text-sm font-medium text-gray-800">Carroattrezzi a {zone}</Link>)}
+            {zones.map((zone) => <Link key={zone.slug} href={`/zone/${zone.slug}`} className="text-sm font-medium text-gray-800">{zone.title}</Link>)}
           </div>
         </details>
         {links.map(({ href, label }, linkIndex) => (

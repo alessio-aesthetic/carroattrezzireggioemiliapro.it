@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import * as Headless from '@headlessui/react'
 import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
@@ -13,7 +13,7 @@ import {
 } from 'framer-motion'
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 import useMeasure, { type RectReadOnly } from 'react-use-measure'
-import { Container } from './container'
+import { Container } from './Container'
 import { Link } from './link'
 import { Heading, Subheading } from './text'
 

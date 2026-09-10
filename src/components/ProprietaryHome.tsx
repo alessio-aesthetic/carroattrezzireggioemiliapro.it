@@ -16,11 +16,11 @@ const palettes: Record<string, Palette> = {
 }
 
 const heroImages: Record<string, string> = {
-  'Reggio Emilia': '/images/hero-towtruck.webp', Catania: '/images/hero-catania.jpg', Livorno: '/images/hero-livorno.jpg', Napoli: '/images/hero-napoli.jpg', Padova: '/images/hero-padova.jpg', Prato: '/images/hero-prato.jpg', Salerno: '/images/hero-salerno.jpg', Pescara: '/images/hero-pescara.jpg', Latina: '/images/hero-latina.jpg', Trieste: '/images/hero-trieste.jpg',
+  Brescia: '/images/hero-towtruck.webp', Catania: '/images/hero-catania.jpg', Livorno: '/images/hero-livorno.jpg', Napoli: '/images/hero-napoli.jpg', Padova: '/images/hero-padova.jpg', Prato: '/images/hero-prato.jpg', Salerno: '/images/hero-salerno.jpg', Pescara: '/images/hero-pescara.jpg', Latina: '/images/hero-latina.jpg', Trieste: '/images/hero-trieste.jpg',
 }
 
 const logoImages: Record<string, string> = {
-  'Reggio Emilia': '/images/logo-reggio-emilia.png', Catania: '/images/logo-catania.png', Livorno: '/images/logo-livorno.png', Napoli: '/images/logo-napoli.png', Padova: '/images/logo-padova.png', Prato: '/images/logo-prato.png', Salerno: '/images/logo-salerno.png', Pescara: '/images/logo-pescara.png', Latina: '/images/logo-latina.png', Trieste: '/images/logo-trieste.png',
+  Brescia: '/images/logo-brescia.png', Catania: '/images/logo-catania.png', Livorno: '/images/logo-livorno.png', Napoli: '/images/logo-napoli.png', Padova: '/images/logo-padova.png', Prato: '/images/logo-prato.png', Salerno: '/images/logo-salerno.png', Pescara: '/images/logo-pescara.png', Latina: '/images/logo-latina.png', Trieste: '/images/logo-trieste.png',
 }
 
 function Call({ palette, children = `Chiama ${site.phone}`, light = false }: { palette: Palette; children?: React.ReactNode; light?: boolean }) {
@@ -39,7 +39,7 @@ function ServiceCards({ palette, services, dark = false, mode = 0 }: { palette: 
 export default function ProprietaryHome() {
   const palette = palettes[site.template] || palettes.salient
   const city = site.city
-  const variant = ['Reggio Emilia', 'Catania', 'Livorno', 'Napoli', 'Padova', 'Prato', 'Salerno', 'Pescara', 'Latina', 'Trieste'].indexOf(city) % 5
+  const variant = ['Brescia', 'Catania', 'Livorno', 'Napoli', 'Padova', 'Prato', 'Salerno', 'Pescara', 'Latina', 'Trieste'].indexOf(city) % 5
   const heroImage = heroImages[city] || '/images/home-hero.jpg'
   const logoImage = logoImages[city]
   const zoneItems = (zones as unknown as Array<string | { name: string; slug: string }>).map((zone) => typeof zone === 'string' ? { name: zone, slug: zone.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') } : zone)

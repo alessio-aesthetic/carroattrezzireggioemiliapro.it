@@ -1,4 +1,4 @@
-﻿import { Container } from '@/components/container'
+import { Container } from '@/components/Container'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
