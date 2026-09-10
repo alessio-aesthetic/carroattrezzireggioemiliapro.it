@@ -1,6 +1,6 @@
 export const site = {
   domain: 'carroattrezzireggioemiliapro.it',
-  template: 'reggio-emilia-nordest',
+  template: 'reggio-signature',
   description: 'Carroattrezzi a Reggio Emilia e soccorso stradale 24 ore: recupero auto, traino, assistenza moto e trasporto veicoli in città e provincia.',
   tel: '05221780329',
   city: 'Reggio Emilia',
@@ -17,28 +17,76 @@ const serviceText = (service: string) => ({
 })
 
 export const services = [
-  { title: 'Soccorso stradale 24 ore', slug: 'soccorso-stradale-24-ore', ...serviceText('soccorso stradale 24 ore') },
-  { title: 'Traino auto', slug: 'traino-auto', ...serviceText('traino auto') },
-  { title: 'Recupero auto incidentata', slug: 'recupero-auto-incidentata', ...serviceText('recupero auto incidentata') },
-  { title: 'Carroattrezzi moto', slug: 'carroattrezzi-moto', ...serviceText('carroattrezzi per moto') },
-  { title: 'Assistenza batteria scarica', slug: 'assistenza-batteria-scarica', ...serviceText('assistenza per batteria scarica') },
-  { title: 'Recupero auto in panne', slug: 'recupero-auto-in-panne', ...serviceText('recupero auto in panne') },
-  { title: 'Soccorso in autostrada', slug: 'soccorso-in-autostrada', ...serviceText('soccorso in autostrada') },
+  { title: 'Soccorso stradale 24 ore', slug: 'soccorso-stradale-24-ore', ...serviceText('soccorso stradale 24 ore'), text: "Un guasto non sceglie il momento. Comunica dove sei e cosa è successo per verificare la disponibilità di intervento." },
+  { title: 'Traino auto', slug: 'traino-auto', ...serviceText('traino auto'), text: "Trasporto del veicolo non marciante verso l’officina o la destinazione concordata, con modalità di carico adeguate." },
+  { title: 'Recupero auto incidentata', slug: 'recupero-auto-incidentata', ...serviceText('recupero auto incidentata'), text: "Valutazione di danni, ruote e accessi per organizzare con attenzione il recupero dopo un sinistro." },
+  { title: 'Carroattrezzi moto', slug: 'carroattrezzi-moto', ...serviceText('carroattrezzi per moto'), text: "Recupero e trasporto di moto e scooter con fissaggi adatti alle due ruote e alle condizioni del mezzo." },
+  { title: 'Assistenza batteria scarica', slug: 'assistenza-batteria-scarica', ...serviceText('assistenza per batteria scarica'), text: "Problemi di avviamento? Descrivi i segnali del veicolo per valutare l’assistenza o il trasferimento in officina." },
+  { title: 'Recupero auto in panne', slug: 'recupero-auto-in-panne', ...serviceText('recupero auto in panne'), text: "Avarie, spie o un motore che non parte: organizziamo il recupero senza forzare il veicolo a proseguire." },
+  { title: 'Soccorso in autostrada', slug: 'soccorso-in-autostrada', ...serviceText('soccorso in autostrada'), text: "Comunica tratta, direzione e riferimento chilometrico. Il soccorso sulla tratta è subordinato alle autorizzazioni necessarie." },
 ] as const
 
 export const zones = [
-  { title: 'Carroattrezzi a Reggio Emilia', name: 'Reggio Emilia', slug: 'reggio-emilia' },
-  { title: 'Carroattrezzi a Tavagnacco', name: 'Tavagnacco', slug: 'tavagnacco' },
-  { title: 'Carroattrezzi a Pasian di Prato', name: 'Pasian di Prato', slug: 'pasian-di-prato' },
-  { title: 'Carroattrezzi a Povoletto', name: 'Povoletto', slug: 'povoletto' },
-  { title: 'Carroattrezzi a Campoformido', name: 'Campoformido', slug: 'campoformido' },
-  { title: 'Carroattrezzi a Martignacco', name: 'Martignacco', slug: 'martignacco' },
-  { title: 'Carroattrezzi a Pozzuolo del Friuli', name: 'Pozzuolo del Friuli', slug: 'pozzuolo-del-friuli' },
-  { title: 'Carroattrezzi a Remanzacco', name: 'Remanzacco', slug: 'remanzacco' },
-  { title: 'Carroattrezzi a Manzano', name: 'Manzano', slug: 'manzano' },
-  { title: 'Carroattrezzi a Cividale del Friuli', name: 'Cividale del Friuli', slug: 'cividale-del-friuli' },
-  { title: 'Carroattrezzi a Codroipo', name: 'Codroipo', slug: 'codroipo' },
-  { title: 'Carroattrezzi a Palmanova', name: 'Palmanova', slug: 'palmanova' },
+  {
+    "title": "Carroattrezzi a Reggio Emilia",
+    "name": "Reggio Emilia",
+    "slug": "reggio-emilia"
+  },
+  {
+    "title": "Carroattrezzi a Rubiera",
+    "name": "Rubiera",
+    "slug": "rubiera"
+  },
+  {
+    "title": "Carroattrezzi a Scandiano",
+    "name": "Scandiano",
+    "slug": "scandiano"
+  },
+  {
+    "title": "Carroattrezzi a Correggio",
+    "name": "Correggio",
+    "slug": "correggio"
+  },
+  {
+    "title": "Carroattrezzi a Montecchio Emilia",
+    "name": "Montecchio Emilia",
+    "slug": "montecchio-emilia"
+  },
+  {
+    "title": "Carroattrezzi a Sant’Ilario d’Enza",
+    "name": "Sant’Ilario d’Enza",
+    "slug": "santilario-denza"
+  },
+  {
+    "title": "Carroattrezzi a Cavriago",
+    "name": "Cavriago",
+    "slug": "cavriago"
+  },
+  {
+    "title": "Carroattrezzi a Albinea",
+    "name": "Albinea",
+    "slug": "albinea"
+  },
+  {
+    "title": "Carroattrezzi a Quattro Castella",
+    "name": "Quattro Castella",
+    "slug": "quattro-castella"
+  },
+  {
+    "title": "Carroattrezzi a Bagnolo in Piano",
+    "name": "Bagnolo in Piano",
+    "slug": "bagnolo-in-piano"
+  },
+  {
+    "title": "Carroattrezzi a Cadelbosco di Sopra",
+    "name": "Cadelbosco di Sopra",
+    "slug": "cadelbosco-di-sopra"
+  },
+  {
+    "title": "Carroattrezzi a Casalgrande",
+    "name": "Casalgrande",
+    "slug": "casalgrande"
+  }
 ] as const
 
 export const networkSites = [
