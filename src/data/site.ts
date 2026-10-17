@@ -5,7 +5,7 @@ export const site = {
   tel: '05221780329',
   city: 'Reggio Emilia',
   name: 'Carroattrezzi Reggio Emilia Pro',
-  address: 'Via Emilia Ospizio, 91, 42122 Reggio Emilia RE',
+  address: "Via Marino Mazzacurati, 3/1, 42122 Reggio nell'Emilia RE",
   title: 'Carroattrezzi Reggio Emilia 24H | Soccorso stradale',
   phone: '0522 178 0329',
   email: 'assistenza@carroattrezzireggioemiliapro.it',
