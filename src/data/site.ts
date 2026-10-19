@@ -2,12 +2,12 @@ export const site = {
   domain: 'carroattrezzireggioemiliapro.it',
   template: 'reggio-signature',
   description: 'Carroattrezzi a Reggio Emilia e soccorso stradale 24 ore: recupero auto, traino, assistenza moto e trasporto veicoli in città e provincia.',
-  tel: '05221780329',
+  tel: '05221770379',
   city: 'Reggio Emilia',
   name: 'Carroattrezzi Reggio Emilia Pro',
   address: "Via Marino Mazzacurati, 3/1, 42122 Reggio nell'Emilia RE",
   title: 'Carroattrezzi Reggio Emilia 24H | Soccorso stradale',
-  phone: '0522 178 0329',
+  phone: '0522 177 0379',
   email: 'assistenza@carroattrezzireggioemiliapro.it',
 } as const
 

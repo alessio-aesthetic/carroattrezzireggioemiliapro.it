@@ -121,8 +121,8 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             )}
           </div>
           <DesktopNav />
-          <Link href="tel:+3905221780329" className="hidden rounded-full bg-[#b45309] px-4 py-2 text-sm font-semibold text-white lg:block">
-            Chiama 0522 178 0329
+          <Link href="tel:+3905221770379" className="hidden rounded-full bg-[#b45309] px-4 py-2 text-sm font-semibold text-white lg:block">
+            Chiama 0522 177 0379
           </Link>
           <MobileNavButton />
         </PlusGridRow>
