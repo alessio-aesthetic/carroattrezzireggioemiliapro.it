@@ -13,4 +13,5 @@ export const metadata: Metadata = {
  openGraph: { title: site.title, description: site.description, url: `https://${site.domain}/`, siteName: site.name, locale: 'it_IT', type: 'website' },
  robots: { index: true, follow: true },
 }
-export default function RootLayout({ children }: { children: React.ReactNode }) { return <html lang="it" className={`${display.variable} ${body.variable}`}><body>{children}</body></html> }
+export default function RootLayout({ children }: { children: React.ReactNode }) { return <html lang="it" className={`${display.variable} ${body.variable}`}><body>{children}<script defer src="/privacy-notice.js" />
+      </body></html> }
