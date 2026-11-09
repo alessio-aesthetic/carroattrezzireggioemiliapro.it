@@ -22,7 +22,7 @@ export function Footer() {
             <div>
               <p className="text-sm font-semibold text-gray-950/50">Contatti</p>
               <ul className="mt-5 space-y-3 text-sm font-medium text-gray-800">
-                <li>Via Marino Mazzacurati, 3/1, 42122 Reggio nell&apos;Emilia RE</li>
+                
                 <li><a href="tel:+3905221770379" className="hover:text-[#b45309]">0522 177 0379</a></li>
                 <li>Attivi 24 ore su 24</li>
               </ul>
